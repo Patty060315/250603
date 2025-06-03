@@ -1,5 +1,9 @@
 let textMagnets = ["hello", "hiii", "sweet", "pattvira"];
 
+function preload() {
+  font = loadFont("Outfit-Regular.ttf"); // 確保字型檔案存在於專案中
+}
+
 class Magnet {
   constructor() {
     this.t = random(textMagnets);
