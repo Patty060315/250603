@@ -34,6 +34,12 @@ function setup() {
 function draw() {
   background(220);
   
+  // 在螢幕最上方中間新增文字
+  fill(0); // 設定文字顏色為黑色
+  textAlign(CENTER, TOP); // 文字置中，並從頂部開始
+  textSize(40); // 設定文字大小
+  text("淡江教育科技系", width / 2, 10); // 在螢幕最上方中間繪製文字
+  
   // Display video and detect index and thumb position
   image(video, 0, 0, width, height);
   if (hands.length > 0) {
