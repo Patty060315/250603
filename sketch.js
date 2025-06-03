@@ -36,6 +36,13 @@ function draw() {
   
   // Display video and detect index and thumb position
   image(video, 0, 0, width, height);
+
+  // 顯示文字 "淡江教育科技學系"
+  fill(0); // 設定文字顏色為黑色
+  textAlign(CENTER, TOP); // 文字置中，並從頂部開始
+  textSize(40); // 設定文字大小
+  text("淡江教育科技學系", width / 2, 20); // 在螢幕最上方中間繪製文字
+
   if (hands.length > 0) {
     let index = hands[0].keypoints[8];
     let thumb = hands[0].keypoints[4];
