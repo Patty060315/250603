@@ -18,7 +18,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 600); // 將畫布大小調整為 1200x 800
+  createCanvas(700, 500); // 將畫布大小調整為700 x 500
   // Detect video & load ML model
   video = createCapture(VIDEO, {flipped: true});
   video.hide();
