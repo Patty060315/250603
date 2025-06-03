@@ -1,4 +1,4 @@
-let textMagnets = ["hello", "hiii", "sweet", "pattvira"];
+let textMagnets = ["T", "K", "U", "E","T", "M", "J", "I"];
 
 class Magnet {
   constructor() {
