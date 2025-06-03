@@ -96,11 +96,11 @@ class Magnet {
   }
 
   touch(thumbX, thumbY, indexX, indexY) {
-    // 判斷是否碰觸星型
+    // 讓星星跟隨手指中點
     let d = dist(this.x, this.y, (thumbX + indexX) / 2, (thumbY + indexY) / 2);
     if (d < this.size) {
-      this.x = random(width);
-      this.y = random(height);
+      this.x = (thumbX + indexX) / 2;
+      this.y = (thumbY + indexY) / 2;
     }
   }
 }
